@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Master - 100+ Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ARCADE<span>FLIX</span></h1>
+        <input type="text" id="search" placeholder="Pesquisar entre centenas de jogos..." onkeyup="filterGames()">
+    </header>
+
+    <main class="game-grid" id="gameGrid"></main>
+
+    <div id="gameOverlay" class="overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="current-game-title">Carregando...</h2>
+                <button class="close-btn" onclick="closeGame()">✖ FECHAR JOGO</button>
+            </div>
+            <iframe id="gameFrame" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <p id="game-count" style="color: #00ff88; font-weight: bold;"></p>
+</body>
+</html>
