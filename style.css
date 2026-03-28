@@ -40,3 +40,11 @@ header h1 span { color: var(--p); text-shadow: 0 0 20px var(--p); }
 ::-webkit-scrollbar-track { background: #080808; }
 ::-webkit-scrollbar-thumb { background: #222; border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--p); }
+#game-count {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--p);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
