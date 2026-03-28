@@ -3,30 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arcade Master - 100+ Jogos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Arcade Master | 35+ Games</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>ARCADE<span>FLIX</span></h1>
-        <input type="text" id="search" placeholder="Pesquisar entre centenas de jogos..." onkeyup="filterGames()">
+        <h1>ARCADE<span>MASTER</span></h1>
+        <p id="game-count">Carregando catálogo...</p>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Pesquisar jogo..." onkeyup="filterGames()">
+            <button id="random-btn" onclick="openRandomGame()">🎲 Surpresa</button>
+        </div>
     </header>
 
     <main class="game-grid" id="gameGrid"></main>
 
-    <div id="gameOverlay" class="overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="current-game-title">Carregando...</h2>
-                <button class="close-btn" onclick="closeGame()">✖ FECHAR JOGO</button>
-            </div>
-            <iframe id="gameFrame" src="" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
     <script src="script.js"></script>
-    <p id="game-count" style="color: #00ff88; font-weight: bold;"></p>
 </body>
 </html>
